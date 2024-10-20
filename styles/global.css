@@ -1,26 +1,45 @@
+@import url("./background.css");
+@import url("./header.css");
+@import url("./main.css");
+
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* overflow: hidden; */
 }
 
 :root {
-  --text: #EDF1F7;
-  --red: #C51212;
-  --blue: #0041C2;
-  --green: #14B02D;
-  --yellow: #ffc12b;
+    --text: #edf1f7;
+    --red: #c51212;
+    --blue: #0041c2;
+    --green: #14b02d;
+    --yellow: #ffc12b;
 }
 
-body, button, a {
-  color: var(--text);
-  font: 400 1rem "Mukta", sans-serif;
+body,
+button,
+a {
+    color: var(--text);
+    font: 400 1rem "Mukta", sans-serif;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 button:hover {
-  cursor: pointer;
+    cursor: pointer;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
 }
